@@ -1,0 +1,103 @@
+img {
+  display: inline-block;
+  position: relative;
+  margin-left: 70px;
+  top: 55px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+h1{
+  text-align: center;
+  color:#09A7A1;
+  /*border-style: double;
+  margin-left: 350px;*/
+  border-width:5px;
+  padding:20px 20px 20px 20px;
+  display:inline-block;
+  font-size: 50px;
+  }
+
+h2{
+  text-align: left;
+  color:#09A7A1;
+  /*border-style: double;
+  border-width:5px;
+  background-color:rgba(45, 45, 45, 0.1);*/
+}
+.thick-darkred-border{
+    border-color: #09A7A1;
+    border-width:2px;
+    border-style:solid;
+    border-radius:15px;
+  }
+
+body {
+    background: url(https://i.imgur.com/MJAkxbh.png)
+  }
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  max-width: 90%;
+  height: 90%;
+  margin: auto;
+ grid-template-areas: 
+    "info skills"
+    "info strategies"
+    "info other"
+    "footer footer";
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+}
+
+.info {
+ color: #00000;
+ margin: 0px;
+ padding: 5%;
+ grid-area: info;
+ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-color: transparent;
+  border-radius:15px;
+}
+
+p{
+  font-family:monospace;
+  font-size:16px
+}
+#text{
+  text-align:center;
+  color: #09A7A1;
+}
+
+ul{
+  font-family:monospace;
+  font-size:16px
+}
+
+
+.skills {
+  color: #403f3f;
+  margin: 0px;
+  padding: 0 5%;
+  grid-area: skills;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-color: lightgrey;
+  /*border-style:solid;*/
+  border-radius:15px;
+  border-color: #09A7A1;
+}
+
+
+.strategies {
+  color: #403f3f;
+  margin: 0px;
+  padding: 0 5%;
+  grid-area: strategies;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-color: lightgrey;
+  /*border-style:solid;*/
+  border-radius:15px;
+  border-color: #09A7A1;
+}
+
+
