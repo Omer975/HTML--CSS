@@ -17,6 +17,8 @@ img{
 h1{
     color: darkred;
     text-align: center;
+    border-style: double;
+    border-width:5px;
 }
     
 h2{
