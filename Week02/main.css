@@ -34,20 +34,18 @@ h1{
 }
 
 @keyframes h1 {
-   10%{color:red;}
-   10%{color:green;}
-   10%{color:blue;}
-   20%{font-size:40px;}
-    from {
-        margin-top: 100%;
-        width: 300%; 
+   from {
+      background:blue;  
+      margin-top: 100%;
+      width: 300%; 
     }
 
     to {
-        margin-top: 0%;
-        width: 100%;
+      background:yellow; 
+      margin-top: 0%;
+      width: 100%;
     }
-    }
+   }
 
     
 h2{
