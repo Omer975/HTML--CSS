@@ -16,17 +16,46 @@ img{
   
 }
 
+img:hover {
+   transform: scale(0.8); 
+}
+img{
+   transition: transform 1s;
+}
+
 h1{
     color: darkred;
     text-align: center;
     border-style: double;
     border-width:5px;
+    animation-name: h1;   /* keyframe */
+    animation-duration: 4s;   
+   
 }
+
+@keyframes h1 {
+   10%{color:red;}
+   10%{color:green;}
+   10%{color:blue;}
+   20%{font-size:40px;}
+    from {
+        margin-top: 100%;
+        width: 300%; 
+    }
+
+    to {
+        margin-top: 0%;
+        width: 100%;
+    }
+    }
+
     
 h2{
   text-align:center;
   clear:both;
 }
+
+ 
 
 ul {
     padding: 0;
@@ -81,6 +110,8 @@ ul {
   
   @media (min-width:50em){
   grid-template-columns: repeat(auto-fit, minmax(15em, 1fr))
+    
+    
    }
   }
    
@@ -97,6 +128,7 @@ ul {
     
      }
   }
+
 }
 
 
@@ -140,15 +172,12 @@ ul {
          
 }
 
-.grid-item:nth-child(1) img:hover {
+/*.grid-item:nth-child(1) img:hover {
       transform: scale(0.8); 
 }
 .grid-item:nth-child(1) img{
   transition: transform 2s;
-}
-
-
-
+}*/
 
 
 
