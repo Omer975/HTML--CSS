@@ -13,7 +13,9 @@ main {
 img{
   width:100%;
   display:block;
+  
 }
+
 h1{
     color: darkred;
     text-align: center;
@@ -79,10 +81,10 @@ ul {
   
   @media (min-width:50em){
   grid-template-columns: repeat(auto-fit, minmax(15em, 1fr))
-    }
+   }
   }
    
-   #grid-flex{
+  #grid-flex{
   width:70%;
   max-width:600px;
   margin:0 auto;
@@ -95,7 +97,6 @@ ul {
     
      }
   }
-
 }
 
 
@@ -132,11 +133,20 @@ ul {
 .grid-item:nth-child(1){
   grid-column: 1 /span 2;
   grid-row:1;
-  color:red;
+  color:darkred;
   border-radius: 4%;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  
+         
 }
+
+.grid-item:nth-child(1) img:hover {
+      transform: scale(0.8); 
+}
+.grid-item:nth-child(1) img{
+  transition: transform 2s;
+}
+
+
 
 
 
