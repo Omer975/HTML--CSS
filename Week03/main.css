@@ -1,1 +1,514 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  padding:0;
+  font-family:ubuntu;
+  box-sizing: border-box;
+  
+} 
+
+#res-menu{
+  display:none;
+}
+header label{
+  display:none;
+  width:32px;
+  height:32px;
+  padding:10px;
+  
+}
+
+header label: hover{
+  cursor:pointer;
+  background-color:rgba(0,0,0,0.3)
+}
+
+.menu ul{
+  margin:0;
+  padding:0;
+  list-style: none;
+  display:flex;
+  justify-content:center;
+  
+}
+
+.menu li{
+  display:inline-block;
+  text-transform: uppercase;
+  
+  
+}
+
+.menu li:hover{
+  text-decoration-line: underline;
+  transition-duration:0.5s;
+ 
+}
+
+.menu li a{
+  display:block;
+  padding:25px 20px;
+  color:#8B4513;
+  text-decoration:none;
+  
+  
+}
+
+.menu li ul{
+  display:none;
+  position:absolute;
+  background:#3cb371;
+ 
+  width:200px;
+  
+}
+
+.menu li:hover ul{
+  display:block;
+  }
+
+.menu li ul li{
+  display:block;
+  text-transform: capitalize;
+  color:#ffffff;
+  
+}
+
+
+@media (max-width:768px){
+  header label{
+    display:block;
+    
+    
+  }
+  .menu{
+    position:absolute;
+    width:100%;
+    margin-top:-100%;
+    transition all 0.5s;
+  }
+  .menu ul{
+    flex-direction:column;
+  }
+  
+  
+  #res-menu:checked ~ .menu{
+    margin:0;
+  }
+}
+
+.image {
+  max-width: 100%;
+  height: auto!important;
+  vertical-align: middle;
+  border: 0;
+  margins:1px auto;
+  padding-left:200px;
+  display:block;
+ 
+}
+
+.image1{
+  display:inline-block;
+  padding-left:200px;
+  position: relative;
+  padding-top:20px;
+ 
+}
+
+
+
+  
+}
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+h1 h2 h3 {
+  font-family:ubuntu;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+header {
+  min-height: 100px;
+  background: transparent;
+  margin: 0 15px 0 15px;
+}
+
+#logo {
+  display: inline-block;
+  float: left;
+  max-width: 200px;
+  margin: 25px 3% 45px;
+}
+
+#logo_1 {
+  height: 60px;
+}
+
+#topshowcase {
+  width: 1140px;
+  margin-top: -20px;
+}
+
+#bottomshowcase {
+  width: 1140px;
+  margin-top: -10px;
+}
+
+#showcase3 {
+  width: 750px;
+  height: 150px;
+  background: #fff;
+  text-align: center;
+  padding: 10px 85px 25px;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,15%);
+}
+
+#showcase4 {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translate(-30%,240%);
+}
+
+#showcase4 a {
+  text-decoration: none;
+}
+
+.circle_orange_wrap {
+  background-color: #e94e0f;
+  color: #fff;
+  font-family: 'Pinyon Script', cursive;
+  border-radius: 50%;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  padding-top: 30px;
+  font-size: 35px;
+}
+
+#undertext {
+  position: relative;
+  color: #fff;
+  background: #35733c;
+  padding: 22px;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 14px;
+  margin-top:-7px;
+}
+
+.letterm {
+  position: absolute;
+  right: 3%;
+  transform: translate(0,-20%)
+}
+
+.highlight {
+position: relative;
+ color:#fff;
+ background:#363636;
+ padding-top:75px;
+ padding-bottom:75px;
+ text-align:center
+}
+
+.highlight .eyes_left {
+   position:absolute;
+ left:30px;
+  bottom: 1px; 
+}
+
+.highlight .eyes_right {
+   position:absolute;
+ right:30px;
+ top:5px;
+}
+
+.highlight_1 h2 {
+  font-size: 50px;
+font-family: 'Zilla Slab', serif;
+font-weight: 400;
+z-index: 1000;
+}
+
+.container1 {
+  width: 1170px;
+  display: flex;
+  justify-content: center;
+}
+
+#carousel {
+  width: 570px;
+  height: auto;
+  margin-left: 270px;
+}
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 400%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img {
+  float: left;
+  width; 25%;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 0%;
+  }
+  40% {
+    left: -100%;
+  }
+  60% {
+    left: -100%;
+  }
+  75% {
+    left: -200%;
+  }
+  95% {
+    left: -200%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+
+.front_news_text {
+  padding: 30px;
+  font-size: 16px;
+}
+
+.front_news_text a {
+  color: #32804B;
+  text-decoration: none;
+}
+
+#hero1 {
+  width: 285px;
+  height: auto;
+}
+
+#hero1 img {
+  width: 285px;
+}
+
+.date {
+  color: #35733c;
+  font-size: 16px;
+}
+
+#hero2 {
+  width: 285px;
+  height: auto;
+}
+
+#hero2 img {
+  width: 285px;
+}
+
+.row {
+  position: relative;
+  background: #7ab7bc;
+  color: #404041;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.row h3 {
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  margin-top: 0;
+}
+
+.news_1 {
+  position: relative;
+  width: 555px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: 300px;
+}
+
+.news_1 p {
+  font-family: 'Zilla Slab', serif;
+}
+
+#cirle1 {
+  position: absolute;
+  top: 25%;
+  right: 3%;
+}
+
+.demorow {
+  height: 381px;
+}
+
+.demo img {
+  padding: 0;
+  float: left;
+  width: 570px;
+}
+
+.demo_text {
+  display: inline-block;
+  position: relative;
+  width: 540px;
+  padding: 30px;
+}
+
+#quote {
+  text-align: center;
+  font-size: 44px;
+  line-height: 1.1;
+  font-family: Freestyle Script;
+  padding-top: 20px;
+  margin-top: 10px;
+}
+
+#quote_name {
+ font-family: Ubuntu;
+ color: #35733c;
+ font-size: 30px;
+ padding-top: 20px;
+ padding-bottom: 30px;
+}
+
+.demoright {
+  float: right;
+  width: 570px;
+  height: 381px;
+  padding: 0;
+}
+
+#sitelinks {
+  margin: 0 auto;
+  padding: 100px 15px 60px 15px;
+}
+
+#sitelinks ul {
+  display: flex;
+  justify-content: center; 
+  list-style: none;
+}
+
+.container_footer {
+  width: 1440px;
+  height: auto;
+  background-image: url(https://muumimuseo.fi/wp-content/themes/muumimuseo/images/bg-footer-navi.jpg);
+  padding: 70px 15px;
+color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+#footerlink {
+  width: 1170px;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  font-family: Ubuntu;
+font-size: 14px;
+}
+
+#footerlink:nth-child(1) {
+  margin-left: 130px;
+}
+
+#footerlink li:hover {
+  text-decoration: underline;
+}
+
+.column {
+  width: 16.66666667%;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: auto;
+}
+
+.column h4 {
+font-size: 16px;
+font-weight: 400;
+text-transform: uppercase;
+color: #fff;
+margin-bottom: 15px;
+}
+
+.column a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#footerlink .botton {
+display: inline-block;
+width: 140px;
+margin: 10px 0;
+padding: 5px 10px;
+color: #fff;
+border: 2px solid #fff;
+letter-spacing: 1px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  height: 110px;
+  padding: 30px 15px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+#social {
+  width: 33.33333333%;
+padding: 5px 30px 0 0;
+}
+
+.icons i {
+  color: #32804B;
+}
+
+footer ul li {
+  float: left;
+  padding-right: 10px;
+}
+
+#footer_right {
+  font-family: Ubuntu;
+font-size: 14px;
+}
+
 
