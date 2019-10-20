@@ -138,10 +138,7 @@ header label: hover{
 }
 
 
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-
-
- h3 {
+h3 {
   font-family:ubuntu;
   margin-top: 20px;
   margin-bottom: 10px;
