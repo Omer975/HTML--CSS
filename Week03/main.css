@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+header {
+  min-height: 100px;
+  background: transparent;
+  margin: 0 15px 0 15px;
+}
 body{
   margin:0;
   padding:0;
@@ -10,6 +15,17 @@ body{
   box-sizing: border-box;
   
 } 
+h1{
+  font-size: 35px;
+  color: #3cb371;
+  font-family:bodoni_egyptian_promedium;
+}
+
+h2{
+  font-size: 30px;
+  color: #000;
+  font-family:bodoni_egyptian_promedium;
+}
 
 #res-menu{
   display:none;
@@ -62,19 +78,20 @@ header label: hover{
   display:none;
   position:absolute;
   background:#3cb371;
- 
   width:200px;
   
 }
 
 .menu li:hover ul{
   display:block;
+  
   }
 
 .menu li ul li{
   display:block;
   text-transform: capitalize;
   color:#ffffff;
+  
   
 }
 
@@ -121,14 +138,10 @@ header label: hover{
 }
 
 
-
-  
-}
-
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 
-h1 h2 h3 {
+ h3 {
   font-family:ubuntu;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -145,39 +158,31 @@ p {
   margin: 0 auto;
 }
 
-header {
-  min-height: 100px;
-  background: transparent;
-  margin: 0 15px 0 15px;
-}
+
 
 #logo {
   display: inline-block;
   float: left;
   max-width: 200px;
-  margin: 25px 3% 45px;
+  margin: 25px 5% 45px;
 }
 
-#logo_1 {
-  height: 60px;
-}
-
-#topshowcase {
+#bannertop {
   width: 1140px;
   margin-top: -20px;
 }
 
-#bottomshowcase {
+#bannerbottom {
   width: 1140px;
   margin-top: -10px;
 }
 
-#showcase3 {
-  width: 750px;
-  height: 150px;
+#bannertext {
+  width: 800px;
+  height: 140px;
   background: #fff;
   text-align: center;
-  padding: 10px 85px 25px;
+  padding: 35px 85px 25px;
   max-width: 100%;
   position: absolute;
   top: 50%;
@@ -185,21 +190,12 @@ header {
   transform: translate(-50%,15%);
 }
 
-#showcase4 {
-  position: absolute;
-  top: 50%;
-  right: 20%;
-  transform: translate(-30%,240%);
-}
 
-#showcase4 a {
-  text-decoration: none;
-}
 
 .circle_orange_wrap {
   background-color: #e94e0f;
   color: #fff;
-  font-family: 'Pinyon Script', cursive;
+  font-family: Comic Sans MS;
   border-radius: 50%;
   text-align: center;
   width: 120px;
@@ -208,7 +204,7 @@ header {
   font-size: 35px;
 }
 
-#undertext {
+#blocktext {
   position: relative;
   color: #fff;
   background: #35733c;
@@ -219,38 +215,38 @@ header {
   margin-top:-7px;
 }
 
-.letterm {
+.museokortti-ikon {
   position: absolute;
-  right: 3%;
+  right: 10%;
   transform: translate(0,-20%)
 }
 
 .highlight {
-position: relative;
- color:#fff;
- background:#363636;
- padding-top:75px;
- padding-bottom:75px;
- text-align:center
+  position: relative;
+  color:#fff;
+  background:#363636;
+  padding-top:75px;
+  padding-bottom:75px;
+  text-align:center
 }
 
-.highlight .eyes_left {
+.highlight .eyesleft {
    position:absolute;
- left:30px;
-  bottom: 1px; 
+   left:30px;
+   bottom: 1px; 
 }
 
-.highlight .eyes_right {
+.highlight .eyesright {
    position:absolute;
- right:30px;
- top:5px;
+   right:30px;
+   top:5px;
 }
 
 .highlight_1 h2 {
   font-size: 50px;
-font-family: 'Zilla Slab', serif;
-font-weight: 400;
-z-index: 1000;
+  font-family: Ubuntu;
+  font-weight: 400;
+  z-index: 1000;
 }
 
 .container1 {
@@ -274,7 +270,7 @@ z-index: 1000;
   width: 400%;
   margin: 0;
   left: 0;
-  animation: 20s slider infinite;
+  animation: 25s slide infinite;
 }
 
 #slider figure img {
@@ -282,7 +278,7 @@ z-index: 1000;
   width; 25%;
 }
 
-@keyframes slider {
+@keyframes slide {
   0% {
     left: 0;
   }
@@ -306,22 +302,22 @@ z-index: 1000;
   }
 }
 
-.front_news_text {
+.front-news-text {
   padding: 30px;
   font-size: 16px;
 }
 
-.front_news_text a {
+.front-news-text a {
   color: #32804B;
   text-decoration: none;
 }
 
-#hero1 {
+#img-muumi1 {
   width: 285px;
   height: auto;
 }
 
-#hero1 img {
+#img-muumi1 img {
   width: 285px;
 }
 
@@ -330,12 +326,12 @@ z-index: 1000;
   font-size: 16px;
 }
 
-#hero2 {
+#img-muumi2 {
   width: 285px;
   height: auto;
 }
 
-#hero2 img {
+#img-muumi2 img {
   width: 285px;
 }
 
@@ -362,7 +358,7 @@ z-index: 1000;
 }
 
 .news_1 p {
-  font-family: 'Zilla Slab', serif;
+  font-family: Ubuntu;
 }
 
 #cirle1 {
@@ -424,7 +420,7 @@ z-index: 1000;
 }
 
 .container_footer {
-  width: 1440px;
+  width: 100%;
   height: auto;
   background-image: url(https://muumimuseo.fi/wp-content/themes/muumimuseo/images/bg-footer-navi.jpg);
   padding: 70px 15px;
@@ -440,7 +436,7 @@ color: #fff;
   justify-content: center;
   text-align: left;
   font-family: Ubuntu;
-font-size: 14px;
+  font-size: 14px;
 }
 
 #footerlink:nth-child(1) {
@@ -508,7 +504,6 @@ footer ul li {
 
 #footer_right {
   font-family: Ubuntu;
-font-size: 14px;
+  font-size: 14px;
 }
-
 
